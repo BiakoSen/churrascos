@@ -1,86 +1,61 @@
 import React from 'react'
-import { Linking, Text, TouchableOpacity, View } from 'react-native'
+import { Image, ImageBackground, Linking, TouchableOpacity, View } from 'react-native'
+
+import styles from '../../styles/ConsStyles'
+
+import Logo from '../../static/images/Logo.png'
+import Back from '../../static/images/Back.png'
+import Catering from '../../static/images/Catering.png'
+import TR from '../../static/images/TR.png'
+import RS from '../../static/images/RS.png'
+import Delivery from '../../static/images/Delivery.png'
+import Menu from '../../static/images/Menu.png'
 
 const RestaurantServices = () => {
 
     return (
-        <View style={{ flex: 1, backgroundColor: 'black', justifyContent: 'space-between', alignItems: 'center' }}>
+        <View style={styles.principalContainer}>
 
-            <View style={{
-                width: '100%',
-                height: 100,
-                backgroundColor: 'red'
-            }} />
-
-            <View style={{
-                width: '80%',
-                height: '70%',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-            }}>
-
-                <TouchableOpacity>
-                    <Text style={{
-                        color: 'white',
-                        width: 220,
-                        fontSize: 20,
-                        borderRadius: 25,
-                        borderWidth: 2,
-                        borderColor: 'white',
-                        backgroundColor: 'red',
-                        paddingVertical: 10,
-                        paddingLeft: 30
-                    }}>Restaurant services</Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center'}}
-                onPress={()=>{
-                    Linking.openURL('https://churrascoscatering.com/events/#inquiryform')
-                }}
-                >
-                    <View style={{width: 70, height: 70, backgroundColor: 'gray', borderRadius: 50, marginRight: 10}}/>
-                    <Text style={{
-                        color: 'white',
-                        width: 220,
-                        fontSize: 20,
-                    }}
-                    >Catering</Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center'}}>
-                    <View style={{width: 70, height: 70, backgroundColor: 'gray', borderRadius: 50, marginRight: 10}}/>
-                    <Text style={{
-                        color: 'white',
-                        width: 220,
-                        fontSize: 20,
-                    }}>Table reservation</Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center'}}>
-                    <View style={{width: 70, height: 70, backgroundColor: 'gray', borderRadius: 50, marginRight: 10}}/>
-                    <Text style={{
-                        color: 'white',
-                        width: 220,
-                        fontSize: 20,
-                    }}>Delivery</Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center'}}>
-                    <View style={{width: 70, height: 70, backgroundColor: 'gray', borderRadius: 50, marginRight: 10}}/>
-                    <Text style={{
-                        color: 'white',
-                        width: 220,
-                        fontSize: 20,
-                    }}>Menu</Text>
-                </TouchableOpacity>
-
+            <View style={styles.barRed}>
+                <Image source={Logo} style={styles.miniLogoStyle} />
             </View>
 
-            <View style={{
-                width: '100%',
-                height: 100,
-                backgroundColor: 'red'
-            }} />
+            <Image source={RS} style={styles.principalButtom} />
+
+            <ImageBackground source={Back} style={styles.secundaryContainer}>
+
+                <TouchableOpacity
+                    onPress={() => {
+                        Linking.openURL('https://churrascoscatering.com/events/#inquiryform')
+                    }}
+                >
+                    <Image source={Catering} style={styles.secundaryButtom} />
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    onPress={() => {
+                        Linking.openURL('https://churrascos.com/order-online/#reservations')
+                    }}>
+                    <Image source={TR} style={styles.secundaryButtom} />
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    onPress={() => {
+                        Linking.openURL('https://churrascos.com/order-online/')
+                    }}>
+                    <Image source={Delivery} style={styles.secundaryButtom} />
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    onPress={() => {
+                        Linking.openURL('https://churrascos.com/menus-by-location/menus/')
+                    }}>
+                    <Image source={Menu} style={styles.secundaryButtom} />
+                </TouchableOpacity>
+
+            </ImageBackground>
+
+            <View style={styles.barRed} />
 
         </View>
     )

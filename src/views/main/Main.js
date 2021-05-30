@@ -1,5 +1,13 @@
 import React from 'react'
-import { Text, TouchableOpacity, View } from 'react-native'
+import { Image, ImageBackground, TouchableOpacity, View } from 'react-native'
+
+import styles from '../../styles/ConsStyles'
+
+import Logo from '../../static/images/Logo.png'
+import Back from '../../static/images/Back.png'
+import Ad from '../../static/images/Anuncio.png'
+import RS from '../../static/images/RS.png'
+import CS from '../../static/images/CS.png'
 
 const Main = (props) => {
 
@@ -10,74 +18,31 @@ const Main = (props) => {
     }
 
     return (
-        <View style={{ flex: 1, backgroundColor: 'black', justifyContent: 'space-between', alignItems: 'center' }}>
+        <View style={styles.principalContainer}>
 
-            <View style={{
-                width: '100%',
-                height: 100,
-                backgroundColor: 'red'
-            }} />
+            <View style={styles.barRed} />
 
-            <View style={{
-                width: '80%',
-                height: '70%',
-                justifyContent: 'space-around',
-                alignItems: 'center'
-            }}>
+            <ImageBackground source={Back} style={styles.secundaryContainer}>
 
-                <View style={{
-                    width: '80%',
-                    height: '30%',
-                    alignItems: 'center'
-                }}>
-                    <Text style={{ color: 'white', fontSize: 52 }}>Churrascos</Text>
-                </View>
+                <Image source={Logo} style={styles.logoStyle} />
 
-                <View style={{ paddingHorizontal: 20, height: 150, justifyContent: 'space-around' }}>
-                    <TouchableOpacity>
-                        <Text style={{
-                            color: 'white',
-                            width: 220,
-                            fontSize: 20,
-                            borderRadius: 25,
-                            borderWidth: 2,
-                            borderColor: 'white',
-                            backgroundColor: 'red',
-                            paddingVertical: 10,
-                            paddingLeft: 30
-                        }}
-                        onPress={goResService}>Restaurant services</Text>
+                <View style={styles.buttomContainer}>
+                    <TouchableOpacity
+                        onPress={goResService}
+                    >
+                        <Image source={RS} style={styles.principalButtom} />
                     </TouchableOpacity>
 
                     <TouchableOpacity>
-                        <Text style={{
-                            color: 'white',
-                            width: 220,
-                            fontSize: 20,
-                            borderRadius: 25,
-                            borderWidth: 2,
-                            borderColor: 'white',
-                            backgroundColor: 'red',
-                            paddingVertical: 10,
-                            paddingLeft: 30
-                        }}>Customer services</Text>
+                        <Image source={CS} style={styles.principalButtom} />
                     </TouchableOpacity>
                 </View>
 
-                <View style={{
-                    width: '80%',
-                    height: '30%',
-                    backgroundColor: 'gray',
-                    borderRadius: 20
-                }} />
+                <Image source={Ad} style={styles.adStyle} />
 
-            </View>
+            </ImageBackground>
 
-            <View style={{
-                width: '100%',
-                height: 100,
-                backgroundColor: 'red'
-            }} />
+            <View style={styles.barRed} />
 
         </View>
     )
