@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/churrasco.iml" filepath="$PROJECT_DIR$/.idea/modules/churrasco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/churrasco.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/churrasco.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1488812312/churrasco.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/1488812312/churrasco.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/44947135/churrasco.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/44947135/churrasco.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1043155965/churrasco.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/1043155965/churrasco.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/895892328/churrasco.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/895892328/churrasco.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/195640704/churrasco.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/195640704/churrasco.react-native-screens.iml" />
+    </modules>
+  </component>
+</project>

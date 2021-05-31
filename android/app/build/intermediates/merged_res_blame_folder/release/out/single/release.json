@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-xhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-xhdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_static_images_catering.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-mdpi/src_static_images_catering.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-xxhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-xxhdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_static_images_logo.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-mdpi/src_static_images_logo.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-xxxhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-xxxhdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_static_images_cs.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-mdpi/src_static_images_cs.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_static_images_anuncio.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-mdpi/src_static_images_anuncio.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_static_images_tr.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-mdpi/src_static_images_tr.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_static_images_rs.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-mdpi/src_static_images_rs.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_static_images_back.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-mdpi/src_static_images_back.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_static_images_menu.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-mdpi/src_static_images_menu.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/raw_app.json.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/raw/app.json"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_static_images_delivery.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-mdpi/src_static_images_delivery.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-hdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-hdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnavigation_stack_src_views_assets_backiconmask.png.flat",
+        "source": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnavigation_stack_src_views_assets_backiconmask.png"
+    }
+]

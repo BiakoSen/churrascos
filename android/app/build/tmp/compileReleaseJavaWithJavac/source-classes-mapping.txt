@@ -1,0 +1,9 @@
+com/churrasco/MainActivity.java
+ com.churrasco.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/churrasco/BuildConfig.java
+ com.churrasco.BuildConfig
+com/churrasco/MainApplication.java
+ com.churrasco.MainApplication
+ com.churrasco.MainApplication$1
