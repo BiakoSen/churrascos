@@ -14,3 +14,4 @@ export const RFValue = (fontSize = 0, standardScreenHeight = 680) => {
     const heightPercent = (fontSize * deviceHeight) / standardScreenHeight
     return Math.round(heightPercent)
 }
+
