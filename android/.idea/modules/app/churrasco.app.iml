@@ -132,7 +132,9 @@
     <orderEntry type="library" name="Gradle: org.webkit:android-jsc:r245459@aar" level="project" />
     <orderEntry type="library" name="Gradle: artifacts:react-native-reanimated:unspecified" level="project" />
     <orderEntry type="module" module-name="churrasco.react-native-community_masked-view" />
+    <orderEntry type="module" module-name="churrasco.react-native-date-picker" />
     <orderEntry type="module" module-name="churrasco.react-native-gesture-handler" />
+    <orderEntry type="module" module-name="churrasco.react-native-push-notification" />
     <orderEntry type="module" module-name="churrasco.react-native-safe-area-context" />
     <orderEntry type="module" module-name="churrasco.react-native-screens" />
   </component>

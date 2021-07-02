@@ -1,5 +1,7 @@
 import { Platform, Dimensions, StatusBar } from 'react-native'
 
+import { showMessage } from 'react-native-flash-message'
+
 const { height, width } = Dimensions.get("window")
 const standardLength = width > height ? width : height
 const offset =
@@ -15,3 +17,9 @@ export const RFValue = (fontSize = 0, standardScreenHeight = 680) => {
     return Math.round(heightPercent)
 }
 
+export const errorMessage = (message='Error') =>{
+    showMessage({
+        message,
+        type: 'danger'
+    })
+}

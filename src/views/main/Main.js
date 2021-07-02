@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, ImageBackground, TouchableOpacity, View } from 'react-native'
+import { Image, ImageBackground, TouchableOpacity, View, Text } from 'react-native'
 
 import styles from '../../styles/ConsStyles'
 
@@ -20,7 +20,7 @@ const Main = (props) => {
     return (
         <View style={styles.principalContainer}>
 
-            <View style={styles.barRed} />
+            <View style={styles.barRed}/>
 
             <ImageBackground source={Back} style={styles.secundaryContainer}>
 

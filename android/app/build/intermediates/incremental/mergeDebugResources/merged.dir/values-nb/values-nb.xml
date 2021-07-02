@@ -28,8 +28,10 @@
     <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Del med <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Skjul"</string>
     <string name="ampm_description">Velg am/pm</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> har problemer med Google Play-tjenester. Prøv på nytt."</string>
     <string name="date_description">Velg dato</string>
     <string name="day_description">Velg dag</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Diverse"</string>
     <string name="hour_description">Velg time</string>
     <string name="hour_tag">Time</string>
     <string name="minutes_description">Velg minutter</string>

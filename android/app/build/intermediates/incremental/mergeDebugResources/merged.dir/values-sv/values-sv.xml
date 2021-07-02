@@ -28,8 +28,10 @@
     <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Dela med <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Komprimera"</string>
     <string name="ampm_description">Välj am/pm</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"Det har uppstått ett fel mellan <ns1:g id="APP_NAME">%1$s</ns1:g> och Google Play-tjänsterna. Försök igen."</string>
     <string name="date_description">Välj ett datum</string>
     <string name="day_description">Välj en dag</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Diverse"</string>
     <string name="hour_description">Välj en timme</string>
     <string name="hour_tag">Timme:</string>
     <string name="minutes_description">Välj minuter</string>

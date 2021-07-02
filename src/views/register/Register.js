@@ -13,6 +13,8 @@ import { http } from '../../service/api'
 
 import styles from '../../styles/ConsStyles'
 
+import { errorMessage } from '../../utils/constants'
+
 import Back from '../../static/images/Back.png'
 
 const Register = (props) => {
@@ -47,10 +49,12 @@ const Register = (props) => {
 
             if (data.success === true) {
                 back()
+            }else{
+                errorMessage(data.message)
             }
 
         } catch (error) {
-            throw String(error)
+            errorMessage(error)
         }
     }
 
@@ -106,6 +110,7 @@ const Register = (props) => {
                                     onChangeText={setPass}
                                     style={styles.generalInput}
                                     placeholder='Password'
+                                    secureTextEntry
                                 />
                             </View>
 
@@ -116,6 +121,7 @@ const Register = (props) => {
                                     onChangeText={setCPass}
                                     style={styles.generalInput}
                                     placeholder='Confirm password'
+                                    secureTextEntry
                                 />
                             </View>
 

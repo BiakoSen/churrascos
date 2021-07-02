@@ -12,6 +12,7 @@ import imgBackground from '../../static/images/Back.png'
 import Logo from '../../static/images/Logo.png'
 
 import { http } from '../../service/api'
+import { errorMessage } from '../../utils/constants'
 
 import styles from '../../styles/ConsStyles'
 
@@ -20,18 +21,28 @@ const Login = (props) => {
     const [userName, setUserName] = useState('')
     const [pass, setPass] = useState('')
 
+    const [dataUser, setDataUser] = useState('')
+
     const { navigation } = props
 
+    const clear = () => {
+        setUserName('')
+        setPass('')
+    }
+
     const goToMain = () => {
-        navigation.navigate('Main')
+        navigation.navigate('Main', {dataUser: dataUser})
+        clear()
     }
 
     const goToAdmin = () => {
         navigation.navigate('TabAdmin')
+        clear()
     }
 
     const goToRegister = () => {
         navigation.navigate('Register')
+        clear()
     }
 
     const loginRequest = async () => {
@@ -49,6 +60,7 @@ const Login = (props) => {
             if (data.success) {
                 switch (data.data.fk_perfil) {
                     case 1: {
+                        setDataUser(data.data)
                         goToMain()
                         break
                     }
@@ -57,6 +69,8 @@ const Login = (props) => {
                         break
                     }
                 }
+            }else{
+                errorMessage(data.message)
             }
 
         } catch (error) {
@@ -113,7 +127,9 @@ const Login = (props) => {
                                 <TextInput style={styles.generalInput}
                                     value={pass}
                                     onChangeText={setPass}
-                                    placeholder='Password' />
+                                    placeholder='Password' 
+                                    secureTextEntry
+                                    />
 
                             </View>
                         </View>

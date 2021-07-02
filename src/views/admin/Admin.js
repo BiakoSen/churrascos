@@ -1,68 +1,112 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
     View,
     ImageBackground,
     Text,
     TextInput,
     Image,
-    TouchableOpacity
+    TouchableOpacity,
+    FlatList
 } from 'react-native'
-import DatePicker from 'react-native-date-picker'
+
+import Back from '../../static/images/Back.png'
+
+import { http } from '../../service/api'
+import { errorMessage } from '../../utils/constants'
 
 import styles from '../../styles/ConsStyles'
 
-import Back from '../../static/images/Back.png'
-import { color } from 'react-native-reanimated'
 
-const Admin = () => {
+const Admin = (props) => {
 
-    const [date, setDate] = useState(new Date())
+    const [userData, setUserData] = useState([])
+
+    const userRequest = async () => {
+
+        try {
+
+            const { data } = await http.get('/users/')
+            console.log('get users: ', data)
+
+            if (data.success === true) {
+                setUserData(data.users)
+            } else {
+                errorMessage(data.errorMessage)
+            }
+
+        } catch (error) {
+            errorMessage(error)
+        }
+
+    }
+
+    
+
+    useEffect(_ => {
+        userRequest()
+    }, [])
 
     return (
         <View style={styles.principalContainer}>
-
             <View style={styles.barRed} />
 
-            <ImageBackground style={styles.secundaryContainer}
-                source={Back}>
+            <ImageBackground source={Back} style={styles.secundaryContainer}>
+
                 <View style={styles.subContainer}>
+                    <Text style={styles.titleWhite}>User list</Text>
 
-                    <View style={styles.inputContainer}>
-                        <Text style={styles.titleWhite}>Title:</Text>
-                        <TextInput style={styles.generalInput}
-                            placeholder='Title'
+                    <View style={{
+                        height: '90%',
+                        width: '100%',
+                    }}>
+
+                        <FlatList
+                            keyExtractor={(item) => item.idusuario}
+                            data={userData}
+                            renderItem={({ item }) => (
+                                <View style={{
+                                    height: 60,
+                                    width: '100%',
+                                    backgroundColor: 'black',
+                                    borderRadius: 10,
+                                    marginBottom: 5,
+                                    flexDirection: 'row',
+                                    justifyContent: 'space-between'
+
+                                }}>
+
+                                    <View style={{
+                                        height: '100%',
+                                        width: '47.5%',
+                                        justifyContent: 'space-between'
+                                    }}>
+                                        <Text style={styles.titleWhite}>{item.username}</Text>
+
+                                        <Text style={styles.titleWhiteSmall}>{item.email}</Text>
+
+                                        <Text style={styles.titleWhite}>{item.fk_perfil === 1 ? 'Client' : 'Admin'}</Text>
+                                    </View>
+
+                                    <TouchableOpacity style={{
+                                        height: '100%',
+                                        width: '47.5%',
+                                        justifyContent: 'center',
+                                        alignItems: 'center'
+                                    }}
+                                        disabled={item.fk_perfil === 1 ? false : true}
+                                    >
+                                        <Text style={
+                                            [styles.titleWhite, {color: item.fk_perfil === 1 ? 'white' : 'gray'}]
+                                        }>Delete</Text>
+                                    </TouchableOpacity>
+
+                                </View>
+                            )}
                         />
-                    </View>
-
-                    <View style={styles.inputContainer}>
-                        <Text style={styles.titleWhite}>Message:</Text>
-
-
-                        <TextInput style={styles.bigInput}
-                            placeholder='Message'
-                            numberOfLines={4}
-                            multiline
-                            textAlignVertical={'top'}
-                        />
 
                     </View>
-
-                    <View style={styles.inputContainer}>
-                        <Text style={styles.titleWhite}>Date:</Text>
-                        <DatePicker
-                            style={styles.datePicker}
-                            date={date}
-                            textColor={'#fff'}
-                            onDateChange={setDate}
-                            minimumDate={new Date()}
-                        />
-                    </View>
-
-                    <TouchableOpacity style={styles.buttomSolo}>
-                        <Text style={{ color: 'black' }}>Enviar</Text>
-                    </TouchableOpacity>
-
                 </View>
+
             </ImageBackground>
 
         </View>

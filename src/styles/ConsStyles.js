@@ -10,7 +10,7 @@ export default {
     barRed: {
         width: '100%',
         height: RFValue(60),
-        backgroundColor: '#8f0000'
+        backgroundColor: '#8f0000',
     },
     secundaryContainer: {
         flex: 1,
@@ -20,8 +20,8 @@ export default {
         alignItems: 'center'
     },
     subContainer: {
-        height: '90%',
-        width: '90%',
+        height: '95%',
+        width: '95%',
         padding: '5%',
         justifyContent: 'space-around',
         alignItems: 'center'
@@ -98,6 +98,11 @@ export default {
     titleWhite: {
         color: 'white',
         fontSize: RFValue(18),
+        // paddingHorizontal: '5%',
+    },
+    titleWhiteSmall: {
+        color: 'white',
+        fontSize: RFValue(13),
         // paddingHorizontal: '5%',
     },
     rowItems: {
