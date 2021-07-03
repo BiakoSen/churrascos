@@ -23,3 +23,10 @@ export const errorMessage = (message='Error') =>{
         type: 'danger'
     })
 }
+
+export const successMessage = (message='Good') =>{
+    showMessage({
+        message,
+        type: 'success'
+    })
+}

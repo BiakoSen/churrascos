@@ -12,7 +12,7 @@ import {
 import Back from '../../static/images/Back.png'
 
 import { http } from '../../service/api'
-import { errorMessage } from '../../utils/constants'
+import { errorMessage, successMessage } from '../../utils/constants'
 
 import styles from '../../styles/ConsStyles'
 
@@ -40,7 +40,24 @@ const Admin = (props) => {
 
     }
 
-    
+    const deleteUser = async (id) => {
+        try {
+            const {data} = await http.put('/users/', {
+                isactive: 0,
+                idusuario: id
+            })
+
+            if(data.success === true){
+                successMessage(data.message)
+                userRequest()
+            }else{
+
+            }
+
+        } catch (error) {
+            errorMessage(error)
+        }
+    }
 
     useEffect(_ => {
         userRequest()
@@ -94,10 +111,11 @@ const Admin = (props) => {
                                         alignItems: 'center'
                                     }}
                                         disabled={item.fk_perfil === 1 ? false : true}
+                                        onPress={_ => {deleteUser(item.idusuario)}}
                                     >
                                         <Text style={
                                             [styles.titleWhite, {color: item.fk_perfil === 1 ? 'white' : 'gray'}]
-                                        }>Delete</Text>
+                                        }>to disable</Text>
                                     </TouchableOpacity>
 
                                 </View>

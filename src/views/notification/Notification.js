@@ -14,19 +14,21 @@ import styles from '../../styles/ConsStyles'
 import Back from '../../static/images/Back.png'
 
 import PushNotification from 'react-native-push-notification'
+import { errorMessage } from '../../utils/constants'
+import { http } from '../../service/api'
 
 const Notification = () => {
 
     const [date, setDate] = useState(new Date())
+    const [message, setMessage] = useState('')
 
     const noti = () => {
         PushNotification.localNotification({
             autoCancel: true,
             channelId: 'channel-id',
-            bigText:
-                'This is local notification demo in React Native app. Only shown, when expanded.',
+            bigText: `${message}`,
             subText: 'Local Notification Demo',
-            title: 'Local Notification Title',
+            title: 'Churrascos',
             message: 'Expand me to see more',
             vibrate: true,
             vibration: 300,
@@ -45,13 +47,6 @@ const Notification = () => {
                 <View style={styles.subContainer}>
 
                     <View style={styles.inputContainer}>
-                        <Text style={styles.titleWhite}>Title:</Text>
-                        <TextInput style={styles.generalInput}
-                            placeholder='Title'
-                        />
-                    </View>
-
-                    <View style={styles.inputContainer}>
                         <Text style={styles.titleWhite}>Message:</Text>
 
 
@@ -60,6 +55,8 @@ const Notification = () => {
                             numberOfLines={4}
                             multiline
                             textAlignVertical={'top'}
+                            value={message}
+                            onChangeText={setMessage}
                         />
 
                     </View>
