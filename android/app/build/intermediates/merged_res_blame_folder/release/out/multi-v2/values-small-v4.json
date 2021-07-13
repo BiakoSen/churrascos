@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/alysystem/workspace/reactNative/churrascos/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-small-v4/values-small-v4.xml",
+            "outputFile": "C:\\Users\\Samuel\\Workspace\\Movil\\ReactNative\\churrascos\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "/home/alysystem/.gradle/caches/transforms-2/files-2.1/747f53e70e3372703b3570ac3dfbfb03/material-1.1.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-2\\files-2.1\\8f3bfcf943e6ea0bd8360e35b597b57a\\material-1.1.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

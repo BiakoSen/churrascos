@@ -83,7 +83,7 @@ const RestaurantsView = (props) => {
 
                         <TouchableOpacity style={{
                             height: '100%',
-                            width: '45%',
+                            width: '49%',
                             backgroundColor: '#c9c9c9',
                             borderRadius: 10
                         }}
@@ -92,7 +92,7 @@ const RestaurantsView = (props) => {
                             <Image style={{
                                 height: '100%',
                                 width: '100%',
-
+                                resizeMode: 'contain',
                             }}
                                 source={Me}
                             />
@@ -100,7 +100,7 @@ const RestaurantsView = (props) => {
 
                         <TouchableOpacity style={{
                             height: '100%',
-                            width: '45%',
+                            width: '49%',
                             backgroundColor: '#c9c9c9',
                             borderRadius: 10
                         }}
@@ -109,7 +109,7 @@ const RestaurantsView = (props) => {
                             <Image style={{
                                 height: '100%',
                                 width: '100%',
-
+                                resizeMode: 'contain',
                             }}
                                 source={RO}
                             />
@@ -127,7 +127,7 @@ const RestaurantsView = (props) => {
 
                         <TouchableOpacity style={{
                             height: '100%',
-                            width: '45%',
+                            width: '49%',
                             backgroundColor: '#c9c9c9',
                             borderRadius: 10
                         }}
@@ -136,7 +136,7 @@ const RestaurantsView = (props) => {
                             <Image style={{
                                 height: '100%',
                                 width: '100%',
-
+                                resizeMode: 'contain',
                             }}
                                 source={Su}
                             />
@@ -144,7 +144,7 @@ const RestaurantsView = (props) => {
 
                         <TouchableOpacity style={{
                             height: '100%',
-                            width: '45%',
+                            width: '49%',
                             backgroundColor: '#c9c9c9',
                             borderRadius: 10
                         }}
@@ -153,7 +153,7 @@ const RestaurantsView = (props) => {
                             <Image style={{
                                 height: '100%',
                                 width: '100%',
-
+                                resizeMode: 'contain',
                             }}
                                 source={Wo}
                             />
