@@ -11,7 +11,13 @@ import RS from '../../static/images/RS.png'
 import Delivery from '../../static/images/Delivery.png'
 import Menu from '../../static/images/Menu.png'
 
-const RestaurantServices = () => {
+const RestaurantServices = (props) => {
+
+    const { navigation } = props
+
+    const go = (option) => {
+        navigation.navigate('Restaurants', {option})
+    }
 
     return (
         <View style={styles.principalContainer}>
@@ -34,14 +40,14 @@ const RestaurantServices = () => {
 
                 <TouchableOpacity
                     onPress={() => {
-                        Linking.openURL('https://churrascos.com/order-online/#reservations')
+                        go('reservation')
                     }}>
                     <Image source={TR} style={styles.secundaryButtom} />
                 </TouchableOpacity>
 
                 <TouchableOpacity
                     onPress={() => {
-                        Linking.openURL('https://churrascos.com/order-online/')
+                        go('delivery')
                     }}>
                     <Image source={Delivery} style={styles.secundaryButtom} />
                 </TouchableOpacity>

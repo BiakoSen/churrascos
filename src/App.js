@@ -11,6 +11,7 @@ import Notification from './views/notification/Notification'
 import RestaurantService from './views/restaurantServices/RestaurantServices'
 
 import FlashMessage from 'react-native-flash-message';
+import RestaurantsView from './views/restaurants/Restaurants.view';
 
 const Stack = createStackNavigator();
 
@@ -41,6 +42,7 @@ const App = () => {
           }</Stack.Screen>
           <Stack.Screen name="Main" component={Main} />
           <Stack.Screen name="RestaurantService" component={RestaurantService} />
+          <Stack.Screen name="Restaurants" component={RestaurantsView} />
         </Stack.Navigator>
       </NavigationContainer>
       <FlashMessage position='top'/>

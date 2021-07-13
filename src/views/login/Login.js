@@ -142,7 +142,7 @@ const Login = (props) => {
                             </TouchableOpacity>
 
                             <TouchableOpacity style={styles.buttomLogin}
-                                onPress={loginRequest}
+                                onPress={goToAdmin}
                             >
                                 <Text>Sign in</Text>
                             </TouchableOpacity>
